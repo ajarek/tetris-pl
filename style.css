@@ -13,6 +13,15 @@ body {
     background-color: black;
 
 }
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 50%;
+
+}
 
 .punkty,
 .linie {
@@ -20,22 +29,27 @@ body {
 }
 
 .grid {
-
+    margin: 10px;
     width: 300px;
     height: 450px;
     display: flex;
     flex-wrap: wrap;
     background-color: lightblue;
+  
 }
 
 .grid div {
     width: 30px;
     height: 30px;
   border: 1px solid;
+  box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
 }
+
+
 
 .oko {
     background: blue;
+    box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
 }
 
 .oko2 {

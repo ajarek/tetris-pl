@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
       kolumnaStartowa = 4
       draw()
       dodajPunkty()
-
+      gameOver()
     }
   }
 
@@ -182,11 +182,16 @@ document.addEventListener('DOMContentLoaded', () => {
         })
 
         const okoUsun = oko.splice(i, odstep)
-        console.log(okoUsun)
-        console.log(okoUsun.concat(oko))
+        
         oko = okoUsun.concat(oko)
         oko.forEach(cell => grid.appendChild(cell))
       }
+    }
+  }
+  function gameOver() {
+    if (losowanieTetris.some(index =>oko[kolumnaStartowa + index].classList.contains('oko2'))) {
+      punktacja.innerHTML = 'end'
+      clearInterval(timerId)
     }
   }
 })
