@@ -7,25 +7,46 @@
 body {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    background-color: black;
-
+    background-color: #B3E5FC;
 }
-.logo{
+
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem;
 }
-.logo img{
-    width: 50%;
 
+.wrapp {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapp button {
+    background: linear-gradient(90deg, orange, #ff72c0);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+}
+
+.wrapp button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #ff72c0, orange);
+}
+
+.logo img {
+    width: 40%;
 }
 
 .punkty,
 .linie {
-    color: white;
+    color: black;
+    font-size: 1.2rem;
 }
 
 .grid {
@@ -35,17 +56,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     background-color: lightblue;
-  
 }
 
 .grid div {
     width: 30px;
     height: 30px;
-  border: 1px solid;
-  box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+    box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
 }
-
-
 
 .oko {
     background: blue;
@@ -57,5 +74,31 @@ body {
 }
 
 .oko3 {
-    background-color: transparent;
+    background-color: black;
+}
+
+.btn {
+    width: auto;
+    height: auto;
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn button {
+    width: 73px;
+    height: 40px;
+    margin: 2px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: linear-gradient(90deg, #0162c8, #55e7fc);
+    font-size: 1.3rem;
+    color: red;
+    box-shadow: -3px -3px 7px #ffffffb2, 3px 3px 5px rgba(94, 104, 121, 0.945);
+}
+
+.btn button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #55e7fc, #0162c8);
 }
